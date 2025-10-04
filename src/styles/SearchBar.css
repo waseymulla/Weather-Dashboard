@@ -1,0 +1,91 @@
+.search-section {
+  text-align: center;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.search-section p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+/* Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Input */
+.search-input {
+  flex: 1;
+  max-width: 500px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #2f6fe8; /* ✅ your blue */
+  box-shadow: 0 0 0 2px rgba(47, 111, 232, 0.2);
+}
+
+/* Button */
+.search-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #2f6fe8; /* ✅ your blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #589ce0; /* ✅ your hover color */
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .search-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .search-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .search-section p {
+    font-size: 1rem;
+  }
+}

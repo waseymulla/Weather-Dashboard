@@ -1,0 +1,31 @@
+.forecast-list {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.forecast-list h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1f2937; /* gray-800 */
+}
+
+/* Container for forecast cards */
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* wrap on small screens */
+  padding: 0 1rem;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 640px) {
+  .forecast-list h2 {
+    font-size: 1.2rem;
+  }
+
+  .forecast-container {
+    gap: 0.75rem;
+  }
+}
